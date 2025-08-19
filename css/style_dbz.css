@@ -1,0 +1,60 @@
+.card-db {
+    width: 280px;
+    height: 454px;
+}
+
+.img-db {
+    height: 400px;
+    object-fit: contain;
+    top: -30px;
+}
+
+.texto-db {
+    font-family: "Bangers", system-ui;
+    font-size: 4rem;
+    z-index: 1010;
+    text-shadow: 2px 2px #ffd300;
+    color: #000000;
+    line-height: 1;
+}
+
+.escala:hover {
+    animation-name: example;
+    scale: 1.2;
+    animation-duration: 1s;
+}
+
+.favorito {
+    z-index: 1020;
+}
+
+@keyframes example {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 1.2;
+    }
+}
+
+.escala {
+    animation-name: example2;
+    scale: 1;
+    animation-duration: 1s;
+}
+
+@keyframes example2 {
+    0% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+#cookie{
+    z-index: 1030;
+    width: 30rem;
+}

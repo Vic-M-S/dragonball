@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Icone -->
+    <link rel="shortcut icon" href="./img/dgz_icon.png" type="image/x-icon">
+
+    <title>Dragon Ball Z</title>
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Font Banger -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="./css/style_dbz.css">
+
+</head>
+
+<body class="bg-dark">
+
+    <div class="container-fluid text-center">
+        <img src="./img/Dragon_Ball_Z_logo.svg" class="img-fluid my-3" alt="Logotipo" width="80%">
+    </div>
+
+    <div class="container mt-5">
+        <!-- DIV = personagens -->
+        <div class="d-flex flex-wrap gap-5 justify-content-center" id="personagens">
+
+            <div class="d-flex justify-content-center text-warning">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modelo do Card -->
+    <!-- <div class="card-db bg-white shadow rounded-4 position-relative d-flex flex-column"> -->
+        <!-- <img src="https://dragonball-api.com/characters/goku_normal.webp" class="escala position-absolute w-100 img-db"> -->
+        <!-- <p class="favorito p-3 text-end text-warning" id="" onclick=""><i class="fa-regular fa-star" type="button"></i> -->
+        <!-- </p> -->
+        <!-- <p class="mt-auto text-center texto-db">Goku</p> -->
+    <!-- </div> -->
+
+
+    <div class= "position-fixed bottom-0 star-0 m-4" id="cookie" >
+        <div class="card rounded-4 p-3">
+            <h6 class="text-danger">Politica de privacidade</h6> 
+            <p>Ao clicar em aceitar cookie...</p>
+            <div class="d-flex justify-content-between">
+                <button id="aceitar" class="btn btn-primary rounded-pill px-4">
+                    Aceitar Cookies
+                </button>
+                <button id="rejeitar" class="btn btn-secondary rounded-pill px-4">
+                    Rejeitar Cookies
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!-- Script api -->
+    <script src="./js/dragonballz.js"></script>
+    <script src="./js/cookie.js"></script>
+
+    
+
+</body>
+
+</html>
